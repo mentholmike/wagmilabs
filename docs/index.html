@@ -80,8 +80,19 @@
     /* Hero */
     .hero {
       text-align: center;
-      padding: 100px 24px 80px;
+      padding: 60px 24px 80px;
       background: radial-gradient(ellipse at 50% 0%, rgba(99,102,241,0.12) 0%, transparent 60%);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .hero-banner {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto 40px;
+      display: block;
+      border-radius: 16px;
+      border: 1px solid var(--border);
     }
     
     .hero .tag {
@@ -260,6 +271,15 @@
       text-align: center;
     }
     
+    .about-visual .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 16px;
+      border: 3px solid var(--border);
+      object-fit: cover;
+    }
+    
     .about-visual .big-emoji {
       font-size: 80px;
       margin-bottom: 16px;
@@ -344,6 +364,7 @@
 
 <section class="hero">
   <div class="tag">For the curious and the builders</div>
+  <img src="pics/gemini-banner.png" alt="WAGMILABS Banner" class="hero-banner">
   <h1>We build things<br>so our agents can too.</h1>
   <p class="sub">
     WAGMILABS is a one-person shop at the intersection of AI agents and self-hosted infrastructure. 
@@ -471,9 +492,9 @@
         </p>
       </div>
       <div class="about-visual">
-        <div class="big-emoji">🔧</div>
-        <h3>Curious Builders<br>Welcome</h3>
-        <p>Questions, PRs, and "have you tried..."s all appreciated.</p>
+        <img src="pics/profile.jpeg" alt="MentholMike" class="profile-pic">
+        <h3>MentholMike</h3>
+        <p>Builder, debugger, and the human behind the keyboard.</p>
       </div>
     </div>
   </div>
